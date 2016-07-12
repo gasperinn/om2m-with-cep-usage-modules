@@ -14,7 +14,7 @@ The custom created plug-in contains one connected sensor with GUI and predefined
 
 If the GUI of sensor simulator for sending data on OM2M platform shows up, you have successfully run the plug-in. 
 
-To generate CEP rules visit [OM2M platform IP]:8081/cep e.g. http://localhost:8081/cep. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html). When you have defined rules you can subscribe [Monitor application](si.fri.mag.gasperin.monitor) to your OM2M platform container.
+To generate CEP rules visit [OM2M platform IP]:8081/cep e.g. http://localhost:8081/cep. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html). When you have defined CEP rules, you can subscribe [Monitor application](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor) to any of your OM2M platform container.
 
 ##CEP rule example
 Below defined CEP rule catches the event if the average of the last 4 recieved messages shows that user has got systolic value of blood preasure higher than 140, diastolic value of blood preasure higher than 90 and if the average of accelerometer X, Y and Z axis values are smaller than 0.5.
