@@ -2,8 +2,9 @@
 
 Application Monitor can be subscribed to receive data from platform OM2M (default on port 1400 under context /monitor) and post messages to GCM service (Google Cloud Messaging). For subscribing application to platform you need any REST client application (e.g. Advanced REST client for Google Chrome).
 
-Steps to subscribe application to OM2M platform:
+Steps to subscribe application to OM2M platform and forward data to GCM service:
 - The OM2M platform has to be running
+- Edit the 43. and 44. line of Monitor.java file (replace *** sign with GCM API KEY and GCM DEVICE ID which you can get on [GCM service](https://developers.google.com/cloud-messaging/))
 - Run the Monitor.java application
 - Post the subscription HTTP POST message to the OM2M platform
 
