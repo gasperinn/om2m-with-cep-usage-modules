@@ -1,4 +1,4 @@
-# om2m with cep usage modules
+# OM2M with cep usage modules
 
 In this repository are located 3 projects: 
 - OM2M platform with included CEP library and plugin which uses that library ([org.eclipse.om2m](org.eclipse.om2m))
