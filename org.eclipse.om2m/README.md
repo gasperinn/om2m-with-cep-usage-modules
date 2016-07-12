@@ -16,7 +16,7 @@ If the GUI of sensor simulator for sending data on OM2M platform shows up, you h
 
 To generate CEP rules visit [OM2M platform IP]:8081/cep e.g. http://localhost:8081/cep. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html).
 
-##Rule example
+##CEP rule example
 Below defined CEP rule catches the event if the average of the last 4 recieved messages shows that user has got systolic value of blood preasure higher than 140, diastolic value of blood preasure higher than 90 and if the average of accelerometer X, Y and Z axis values are smaller than 0.5.
 
 This meens that our user is not under physical activity (accelerometer values) and the blood preasure is abnormal high.  
