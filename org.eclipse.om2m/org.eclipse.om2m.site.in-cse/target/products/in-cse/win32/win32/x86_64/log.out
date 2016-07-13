@@ -1,0 +1,50 @@
+[2016-07-12 10:16:27,416 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2016-07-12 10:16:27,417 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2016-07-12 10:16:29,270 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2016-07-12 10:16:30,347 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2016-07-12 10:16:30,363 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2016-07-12 10:16:30,369 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2016-07-12 10:16:30,374 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2016-07-12 10:16:30,376 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2016-07-12 10:16:31,228 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2016-07-12 10:16:31,243 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2016-07-12 10:16:31,244 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2016-07-12 10:16:31,245 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2016-07-12 10:16:31,299 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+DataMapper Service discovered
+[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+Add Data Mapper Service: application/xml
+[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2016-07-12 10:16:31,301 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered
+[2016-07-12 10:16:31,302 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Waiting for the database service
+[2016-07-12 10:16:31,303 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create AccessControlPolicy resource
+[2016-07-12 10:16:31,336 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Create CSEBase resource
+[2016-07-12 10:16:31,351 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2016-07-12 10:16:31,356 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2016-07-12 10:16:31,356 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2016-07-12 10:16:31,357 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2016-07-12 10:16:31,358 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
