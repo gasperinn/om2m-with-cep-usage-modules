@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rowTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        android:textSize="16sp"
+        android:text="rowTitle">
+    </TextView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:text="Systolic: ">
+            </TextView>
+
+            <TextView
+                android:id="@+id/rowSystolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="rowSystolic">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:text="Diastolic: ">
+            </TextView>
+
+            <TextView
+                android:id="@+id/rowDiastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingBottom="2dp"
+                android:text="rowDiastolic">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:text="X: ">
+            </TextView>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rowX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="rowX">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:text="Y: ">
+            </TextView>
+
+            <TextView
+                android:id="@+id/rowY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="rowY">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:text="Z: ">
+            </TextView>
+
+            <TextView
+                android:id="@+id/rowZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="rowZ">
+            </TextView>
+
+        </LinearLayout>
+</LinearLayout>
