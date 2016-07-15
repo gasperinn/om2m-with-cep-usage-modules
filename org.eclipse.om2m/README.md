@@ -1,11 +1,11 @@
-#Project with OM2M platform and included CEP library
+#OM2M platform with included CEP library
 
 This project contains full OM2M platform with custom created plug-in example which contains CEP library. With it we can create, edit, delete, modify CEP rules for all conected devices. You can find more about CEP library [here](https://github.com/gasperinn/om2m-cep).
 
 The custom created plug-in contains one connected sensor with GUI and predefined DATA container for that sensor. The sensor represents combined blood pressure sensor and accelerometer. With it we can send data on OM2M platform about systolic, diastolic value of blood pressure sensor and X, Y, Z axis values of accelerometer at the same time. With help of CEP library we can create rules which can detect complex events and send the event to specified data container. 
 
 ##Steps to run OM2M with custom made plug-in
-- Import org.eclipse.om2m project to your Eclipse Kepler workspace and build it ([more](https://wiki.eclipse.org/OM2M/one/Clone)) or just download whole [project](/om2m-with-cep-usage-modules). 
+- Import org.eclipse.om2m project to your Eclipse Kepler workspace and build it ([more](https://wiki.eclipse.org/OM2M/one/Clone)) or just download whole [project](https://github.com/gasperinn/om2m-with-cep-usage-modules). 
 - Once you have built OM2M platform or downloaded whole project start file
 "org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<os>/<ws>/<arch>\start.bat" on windows or 
 "org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<os>/<ws>/<arch>\start.sh" on linux
