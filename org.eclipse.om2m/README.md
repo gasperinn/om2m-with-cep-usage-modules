@@ -6,9 +6,8 @@ The custom created plug-in contains one connected sensor with GUI and predefined
 
 ##Steps to run OM2M with custom made CEP plug-in
 - Import org.eclipse.om2m project to your Eclipse Kepler workspace and build it ([more](https://wiki.eclipse.org/OM2M/one/Clone)) or just download whole [project](https://github.com/gasperinn/om2m-with-cep-usage-modules). 
-- Once you have built OM2M platform or downloaded whole project start file
-"org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<os>/<ws>/<arch>\start.bat" on windows or 
-"org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<os>/<ws>/<arch>\start.sh" on linux
+- Once you have built OM2M platform or downloaded whole project go to
+"org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/&lt;os&gt;/&lt;ws&gt;/&lt;arch&gt;/" and open file "start.bat" on windows or "start.sh" on linux
 - It opens the terminal of OM2M platform. Type "ss" to see which plug-ins are running.
 - Type "start 33" to start org.eclipse.om2m.sample.sensor plug-in.
 
