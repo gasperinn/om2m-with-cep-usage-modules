@@ -13,7 +13,7 @@ The custom created plug-in contains one connected sensor with GUI and predefined
 
 ###Further steps
 - Once you have downloaded whole project or built OM2M platform, go to
-```org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/&lt;os&gt;/&lt;ws&gt;/&lt;arch&gt;/``` and open file "start.bat" on windows or "start.sh" on linux
+```org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<OS>/<WS>/<ARCJ>/``` and open file "start.bat" on windows or "start.sh" on linux
 - It opens the terminal of OM2M platform. Type "ss" to see which plug-ins are running.
 - Type "start 33" to start org.eclipse.om2m.sample.sensor plug-in.
 
