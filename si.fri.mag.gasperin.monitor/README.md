@@ -1,15 +1,32 @@
 # Project si.fri.mag.gasperin.monitor
 
-Application Monitor can be subscribed to receive data from platform OM2M (default on port 1400 under context /monitor) and post messages to GCM service (Google Cloud Messaging). For subscribing application to platform you need any REST client application (e.g. Advanced REST client for Google Chrome).
+Application Monitor can be subscribed to receive data from platform OM2M (default on port 1400 under context /monitor) and post messages to GCM service (Google Cloud Messaging).
 
 ##Steps to subscribe application to OM2M platform and forward data to GCM service
-- The OM2M platform has to be running
-- Edit the 43. and 44. line of Monitor.java file (replace *** sign with **GCM API KEY** and **GCM DEVICE ID** which you can get on [GCM service](https://developers.google.com/cloud-messaging/))
-- Uncomment the 83. line of Monitor.java file (postToGCM("Alert", value);)
-- Run the Monitor.java application
-- Post the subscription HTTP POST message to the OM2M platform
+- Edit the file config.properties for your needs (file description is below)
+- Run OM2M platform
+- Open CMD and navigate to jar folder
+- execute command "java -jar monitor.jar"
 
-##Subscription HTTP POST message
+##config.properties file
+```
+MONITOR_CONTEXT=/monitor                //Context of your Monitor application 
+MONITOR_PORT=1400                       //Port of your Monitor application
+MONITOR_AUTO_SUBSCRIBE=true             //Auto subscribe on OM2M platform
+OM2M_USERNAME=admin                     //Username of OM2M platform
+OM2M_PASSWORD=admin                     //Password of OM2M platform
+OM2M_IP=127.0.0.1                       //Ip address of the server where OM2M platform is hosted
+OM2M_PATH_TO_PRODUCT=/in-cse/in-name    //Path to product for subscription
+OM2M_DEVICE_NAME=SENSOR                 //Device name
+OM2M_CONTAINER_NAME=CEP_DATA            //Container name
+OM2M_SUB_CONTAINER=SUB_MY_SENSOR        //Custom name of subcontainer where subscription will be placed
+POST_TO_GCM=false                       //Post to GCM when data is received
+GCM_API_KEY=***                         //GCM API key of the application 
+GCM_DEVICE_ID=***                       //GCM DEVICE ID
+GCM_TITLE=Alert                         //Title of the message which will be posted to GCM
+```
+
+##Manually subscribe monitor via HTTP POST message
 URL: 
 ```
 [OM2M platform IP]:[PORT]/[path to plug-in product]/[device name]/[container name]
