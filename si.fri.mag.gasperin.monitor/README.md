@@ -3,7 +3,7 @@
 Application Monitor can be subscribed to receive data from platform OM2M (default on port 1400 under context /monitor) and post messages to GCM service (Google Cloud Messaging).
 
 ##Steps to subscribe application to OM2M platform and forward data to GCM service
-- Edit the file [config.properties](https://github.com/gasperinn/om2m-with-cep-usage-modules/blob/master/si.fri.mag.gasperin.monitor/jar/config.properties) for your needs (file description is below)
+- Edit the file [config.properties](https://github.com/gasperinn/om2m-with-cep-usage-modules/blob/master/si.fri.mag.gasperin.monitor/jar/config.properties) in [jar](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor/jar) folder to your needs (file description is below)
 - Run OM2M platform
 - Open CMD and navigate to [jar](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor/jar) folder
 - execute command "java -jar monitor.jar"
