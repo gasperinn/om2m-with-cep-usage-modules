@@ -13,13 +13,13 @@ The custom created plug-in contains one connected sensor with GUI and predefined
 
 ###Further steps
 - Once you have downloaded whole project or built OM2M platform, go to
-"org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/&lt;os&gt;/&lt;ws&gt;/&lt;arch&gt;/" and open file "start.bat" on windows or "start.sh" on linux
+```org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/&lt;os&gt;/&lt;ws&gt;/&lt;arch&gt;/``` and open file "start.bat" on windows or "start.sh" on linux
 - It opens the terminal of OM2M platform. Type "ss" to see which plug-ins are running.
 - Type "start 33" to start org.eclipse.om2m.sample.sensor plug-in.
 
 If the GUI of sensor simulator for sending data on OM2M platform shows up, you have successfully run the plug-in. 
 
-To generate CEP rules visit [OM2M platform IP]:8081/cep e.g. http://localhost:8081/cep. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html). When you have defined CEP rules, you can subscribe [Monitor application](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor) to any of your OM2M platform container.
+To generate CEP rules visit ```[OM2M platform IP]:8081/cep``` e.g. ```http://localhost:8081/cep```. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html). When you have defined CEP rules, you can subscribe [Monitor application](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor) to any of your OM2M platform container.
 
 ##CEP rule example
 Below defined CEP rule catches the event if the average of the last 4 recieved messages shows that user has got systolic value of blood preasure higher than 140, diastolic value of blood preasure higher than 90 and if the average of accelerometer X, Y and Z axis values are smaller than 0.5.
