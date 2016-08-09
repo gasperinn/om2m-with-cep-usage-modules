@@ -5,7 +5,13 @@ This project contains full OM2M platform with custom created plug-in example whi
 The custom created plug-in contains one connected sensor with GUI and predefined DATA container for that sensor. The sensor represents combined blood pressure sensor and accelerometer. With it we can send data on OM2M platform about systolic, diastolic value of blood pressure sensor and X, Y, Z axis values of accelerometer at the same time. With help of CEP library we can create rules which can detect complex events and send the event to specified data container. 
 
 ##Steps to run OM2M with custom made CEP plug-in
--  Download whole [project](https://github.com/gasperinn/om2m-with-cep-usage-modules) or import org.eclipse.om2m project to your Eclipse Kepler workspace and build it ([more](https://wiki.eclipse.org/OM2M/one/Clone)). 
+
+###Download and build
+-  If you have installed maven, download whole [project](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/org.eclipse.om2m) and build it with comand ```mvn install``` or
+- Import org.eclipse.om2m project to your Eclipse Kepler workspace and build it ([more](https://wiki.eclipse.org/OM2M/one/Clone)) or
+- Only for quick use, the [project](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/org.eclipse.om2m) is built, therefore you can just download it without building it.
+
+###Further steps
 - Once you have downloaded whole project or built OM2M platform, go to
 "org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/&lt;os&gt;/&lt;ws&gt;/&lt;arch&gt;/" and open file "start.bat" on windows or "start.sh" on linux
 - It opens the terminal of OM2M platform. Type "ss" to see which plug-ins are running.
