@@ -15,9 +15,8 @@ The custom created plug-in contains one connected sensor with GUI and predefined
 - Once you have downloaded whole project or built OM2M platform, go to
 ```org.eclipse.om2m/org.eclipse.om2m.site.in-cse/target/products/in-cse/<OS>/<WS>/<ARCH>/``` and open file ```start.bat``` on windows or ```start.sh``` on linux
 - It opens the terminal of OM2M platform. Type ```ss``` to see which plug-ins are running.
-- Type ```start 33``` to start org.eclipse.om2m.sample.sensor plug-in.
+- Type ```start 33``` to start org.eclipse.om2m.sample.sensor plug-in. If the GUI of sensor simulator for sending data on OM2M platform shows up, you have successfully run the plug-in. If web version of sensor simulator is a better option type ```start 34``` to start org.eclipse.om2m.sample.web_sensor plug-in. In this case sensor simulator is available on ```http://localhost:8082/sensor```.
 
-If the GUI of sensor simulator for sending data on OM2M platform shows up, you have successfully run the plug-in. 
 
 To generate CEP rules visit ```[OM2M platform IP]:8081/cep``` e.g. ```http://localhost:8081/cep```. Default username and password for login are admin:admin. Here you can create, edit and delete CEP rules for (in org.eclipse.om2m.sample.sensor plug-in) one conected sensor. Rules are defined in [Esper EPL syntax](http://www.espertech.com/esper/release-5.3.0/esper-reference/html/epl_clauses.html). When you have defined CEP rules, you can subscribe [Monitor application](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor) to any of your OM2M platform container.
 
