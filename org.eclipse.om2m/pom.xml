@@ -136,5 +136,6 @@
 		<module>org.eclipse.om2m.site.mn-cse</module>
 		<module>org.eclipse.om2m.sample.ipe</module>
 		<module>org.eclipse.om2m.sample.sensor</module>
+		<module>org.eclipse.om2m.sample.web_sensor</module>
 	</modules>
 </project>

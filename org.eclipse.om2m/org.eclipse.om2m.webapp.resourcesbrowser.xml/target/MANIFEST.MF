@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: org.eclipse.om2m.webapp.resourcesbrowser.xml
 Bundle-Name: Resourcesbrowser
-Bundle-Version: 1.0.0.20160712-0634
+Bundle-Version: 1.0.0.20160811-1241
 Require-Bundle: org.eclipse.osgi
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.om2m.webapp.resourcesbrowser.xml.Activat

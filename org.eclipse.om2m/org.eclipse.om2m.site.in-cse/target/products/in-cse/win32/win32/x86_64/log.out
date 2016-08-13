@@ -1,50 +1,129 @@
-[2016-07-12 10:16:27,416 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+[2016-08-11 14:42:15,984 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
 Starting Data Mapper
-[2016-07-12 10:16:27,417 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+[2016-08-11 14:42:15,984 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
 Registering XML Mapper Service..
-[2016-07-12 10:16:29,270 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+[2016-08-11 14:42:16,630 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
 XML Mapper service registered.
-[2016-07-12 10:16:30,347 INFO] - org.eclipse.om2m.binding.http.Activator 
+[2016-08-11 14:42:16,639 INFO] - org.eclipse.om2m.binding.http.Activator 
 Register HTTP RestClientService..
-[2016-07-12 10:16:30,363 INFO] - org.eclipse.om2m.binding.http.Activator 
+[2016-08-11 14:42:16,642 INFO] - org.eclipse.om2m.binding.http.Activator 
 HTTP RestClientService is registered.
-[2016-07-12 10:16:30,369 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+[2016-08-11 14:42:16,644 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
 Starting Persistence JPA plugin...
-[2016-07-12 10:16:30,374 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+[2016-08-11 14:42:16,645 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
 Initializing Database...
-[2016-07-12 10:16:30,376 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+[2016-08-11 14:42:16,645 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
 Creating new EntityManagerFactory...
-[2016-07-12 10:16:31,228 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+[2016-08-11 14:42:17,433 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
 DataBase initialized.
-[2016-07-12 10:16:31,243 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+[2016-08-11 14:42:17,447 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
 Registering Database (JPA-EL) Service
-[2016-07-12 10:16:31,244 INFO] - org.eclipse.om2m.binding.http.Activator 
+[2016-08-11 14:42:17,448 INFO] - org.eclipse.om2m.binding.http.Activator 
 HttpService discovered
-[2016-07-12 10:16:31,245 INFO] - org.eclipse.om2m.binding.http.Activator 
+[2016-08-11 14:42:17,449 INFO] - org.eclipse.om2m.binding.http.Activator 
 Register / context
-[2016-07-12 10:16:31,299 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,492 INFO] - org.eclipse.om2m.core.Activator 
 Starting CSE...
-[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,492 INFO] - org.eclipse.om2m.core.Activator 
 DataMapper Service discovered
-[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,493 INFO] - org.eclipse.om2m.core.Activator 
 Add Data Mapper Service: application/xml
-[2016-07-12 10:16:31,300 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,493 INFO] - org.eclipse.om2m.core.Activator 
 DataBase persistence service discovered
-[2016-07-12 10:16:31,301 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,494 INFO] - org.eclipse.om2m.core.Activator 
 Rest client service discovered
-[2016-07-12 10:16:31,302 INFO] - org.eclipse.om2m.core.CSEInitializer 
+[2016-08-11 14:42:17,496 INFO] - org.eclipse.om2m.core.CSEInitializer 
 Waiting for the database service
-[2016-07-12 10:16:31,303 INFO] - org.eclipse.om2m.core.CSEInitializer 
+[2016-08-11 14:42:17,496 INFO] - org.eclipse.om2m.core.CSEInitializer 
 Create AccessControlPolicy resource
-[2016-07-12 10:16:31,336 INFO] - org.eclipse.om2m.core.CSEInitializer 
+[2016-08-11 14:42:17,529 INFO] - org.eclipse.om2m.core.CSEInitializer 
 Create CSEBase resource
-[2016-07-12 10:16:31,351 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,544 INFO] - org.eclipse.om2m.core.Activator 
 Registering CseService...
-[2016-07-12 10:16:31,356 INFO] - org.eclipse.om2m.binding.http.Activator 
+[2016-08-11 14:42:17,548 INFO] - org.eclipse.om2m.binding.http.Activator 
 CseService discovered
-[2016-07-12 10:16:31,356 INFO] - org.eclipse.om2m.core.Activator 
+[2016-08-11 14:42:17,548 INFO] - org.eclipse.om2m.core.Activator 
 CSE Started
-[2016-07-12 10:16:31,357 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+[2016-08-11 14:42:17,549 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
 HttpService discovered
-[2016-07-12 10:16:31,358 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+[2016-08-11 14:42:17,549 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
 Register /webpage http context
+[2016-08-11 14:42:17,748 INFO] - org.eclipse.om2m.ipe.sample.Activator 
+Register IpeService..
+[2016-08-11 14:42:17,749 INFO] - org.eclipse.om2m.core.Activator 
+IPE service discovered: sample
+[2016-08-11 14:42:17,750 INFO] - org.eclipse.om2m.ipe.sample.Activator 
+IpeService is registered.
+[2016-08-11 14:42:17,750 INFO] - org.eclipse.om2m.ipe.sample.Activator 
+CseService discovered
+[2016-08-11 14:42:17,779 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ from=admin:admin,
+ resourceType=2,
+ name=SENSOR,
+ content=org.eclipse.om2m.commons.resource.AE@21928e5,
+ targetId=/in-cse,
+ returnContentType=application/obj,
+ requestContentType=application/obj]
+[2016-08-11 14:42:17,780 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController [AEController]
+[2016-08-11 14:42:17,802 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2001,
+ content=org.eclipse.om2m.commons.resource.AE@61af3a43,
+ to=admin:admin,
+ from=/in-cse,
+ location=/in-cse/ae-CAE601098538,
+ ]
+[2016-08-11 14:42:17,802 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ from=admin:admin,
+ resourceType=3,
+ name=DESCRIPTOR,
+ content=org.eclipse.om2m.commons.resource.Container@344ea1c7,
+ targetId=/in-cse/in-name/SENSOR,
+ returnContentType=application/obj,
+ requestContentType=application/obj]
+[2016-08-11 14:42:17,803 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController [ContainerController]
+[2016-08-11 14:42:17,810 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2001,
+ content=org.eclipse.om2m.commons.resource.Container@20d31321,
+ to=admin:admin,
+ from=/in-cse,
+ location=/in-cse/cnt-372949210,
+ ]
+[2016-08-11 14:42:17,811 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ from=admin:admin,
+ resourceType=3,
+ name=DATA,
+ content=org.eclipse.om2m.commons.resource.Container@344ea1c7,
+ targetId=/in-cse/in-name/SENSOR,
+ returnContentType=application/obj,
+ requestContentType=application/obj]
+[2016-08-11 14:42:17,812 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController [ContainerController]
+[2016-08-11 14:42:17,816 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2001,
+ content=org.eclipse.om2m.commons.resource.Container@a7c8284,
+ to=admin:admin,
+ from=/in-cse,
+ location=/in-cse/cnt-680371987,
+ ]
+[2016-08-11 14:42:17,921 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=1,
+ from=admin:admin,
+ resourceType=4,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@5295a0a1,
+ targetId=/in-cse/in-name/SENSOR/DESCRIPTOR,
+ returnContentType=application/obj,
+ requestContentType=application/obj]
+[2016-08-11 14:42:17,922 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController [ContentInstanceController]
+[2016-08-11 14:42:17,927 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2001,
+ content=org.eclipse.om2m.commons.resource.ContentInstance@5ce38142,
+ to=admin:admin,
+ from=/in-cse,
+ location=/in-cse/cin-426918405,
+ ]

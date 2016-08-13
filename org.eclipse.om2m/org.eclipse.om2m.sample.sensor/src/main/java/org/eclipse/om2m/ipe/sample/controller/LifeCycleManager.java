@@ -49,6 +49,7 @@ public class LifeCycleManager {
 			//arterijska hipertenzija	>140	>90
 	
 			/*
+			
 			cepServer.addCepRule("SENSOR", 
 					 			 "CEP_DATA", 
 					 			 "select avg(systolic) AS systolic, "
@@ -59,7 +60,9 @@ public class LifeCycleManager {
 					 			 + "from Sensor.win:length(4) "
 					 			 + "having (avg(systolic) > 140 AND avg(diastolic) > 90) "
 					 			 + "AND (avg(x) < 0.5 AND avg(y) < 0.5 AND avg(z) < 0.5 ) ");
+			
 			*/
+			
 		}
 		
 		cepServer.start();

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: org.eclipse.om2m.sample.ipe
 Bundle-Name: Ipe
-Bundle-Version: 1.0.0.20160712-0634
+Bundle-Version: 1.0.0.20160811-1241
 Bundle-ClassPath: .,lib/om2m-cep.jar
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.om2m.sample.ipe.Activator

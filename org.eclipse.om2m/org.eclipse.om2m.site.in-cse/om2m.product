@@ -62,6 +62,7 @@
       <plugin id="org.eclipse.om2m.persistence.service"/>
       <plugin id="org.eclipse.om2m.sample.ipe"/>
       <plugin id="org.eclipse.om2m.sample.sensor"/>
+      <plugin id="org.eclipse.om2m.sample.web_sensor"/>
       <plugin id="org.eclipse.om2m.webapp.resourcesbrowser.xml"/>
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.services"/>
