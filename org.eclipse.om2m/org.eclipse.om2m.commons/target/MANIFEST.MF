@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.om2m.commons
+Export-Package: org.eclipse.om2m.commons.constants,org.eclipse.om2m.co
+ mmons.entities,org.eclipse.om2m.commons.exceptions,org.eclipse.om2m.c
+ ommons.obix,org.eclipse.om2m.commons.obix.io,org.eclipse.om2m.commons
+ .resource,org.eclipse.om2m.commons.utils
+Bundle-Name: Commons
+Bundle-Version: 1.0.0.20160811-1241
+Bundle-ClassPath: .,libs/javax.persistence.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.apache.commons.logging
+
