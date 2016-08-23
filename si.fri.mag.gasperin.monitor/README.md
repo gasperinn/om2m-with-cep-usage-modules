@@ -5,6 +5,8 @@ Application Monitor can be subscribed to receive data from platform OM2M (defaul
 ##Steps to subscribe application to OM2M platform and forward data to GCM service
 - Edit the file [config.properties](https://github.com/gasperinn/om2m-with-cep-usage-modules/blob/master/si.fri.mag.gasperin.monitor/jar/config.properties) in [jar](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor/jar) folder to your needs (file description is below)
 - Run OM2M platform
+- Run plugin which includes CEP features (e.g. ```start 34```)
+- Open url http://localhost:8081/cep, login and create CEP rule with specific data name (e.g. CEP_DATA)
 - Open CMD and navigate to [jar](https://github.com/gasperinn/om2m-with-cep-usage-modules/tree/master/si.fri.mag.gasperin.monitor/jar) folder
 - execute command ```java -jar monitor.jar```
 
