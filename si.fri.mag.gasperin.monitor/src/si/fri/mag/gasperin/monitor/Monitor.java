@@ -57,7 +57,7 @@ public class Monitor
   
   private static boolean postToGcmBool;
   private static String GCM_API_KEY;
-  private static String GCM_DEVICE_ID;
+  private static String GCM_TOPIC;
   private static String GCM_TITLE;
 
   public static void main(String[] args) throws Exception
@@ -73,7 +73,7 @@ public class Monitor
 	    prop.load(input);
 	    portCEP = Integer.parseInt(prop.getProperty("MONITOR_PORT"));
 	    GCM_API_KEY = prop.getProperty("GCM_API_KEY");
-	    GCM_DEVICE_ID = prop.getProperty("GCM_DEVICE_ID");
+	    GCM_TOPIC = prop.getProperty("GCM_TOPIC");
 	    context = prop.getProperty("MONITOR_CONTEXT");
 	    om2mIp = prop.getProperty("OM2M_IP");
 	    postToGcmBool = Boolean.parseBoolean(prop.getProperty("POST_TO_GCM"));
@@ -205,7 +205,7 @@ public class Monitor
      		
      	   GCMContent content = new GCMContent();
      		
-     	   content.addRegId(GCM_DEVICE_ID);       
+     	   content.addTopic(GCM_TOPIC);       
      	   content.createData(title, message);
      	   
     		   URL url = new URL("https://gcm-http.googleapis.com/gcm/send");
