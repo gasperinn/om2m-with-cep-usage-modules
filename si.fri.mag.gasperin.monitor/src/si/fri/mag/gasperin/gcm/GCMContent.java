@@ -8,13 +8,11 @@ import java.util.Map;
 
 public class GCMContent implements Serializable {
 
-	public List<String> registration_ids;
+	public String to;
 	public Map<String,String> data;
 
-	public void addRegId(String regId){
-	    if(registration_ids == null)
-	        registration_ids = new LinkedList<String>();
-	    registration_ids.add(regId);
+	public void addTopic(String topic){
+	    to = topic;
 	}
 
 	public void createData(String title, String message){
