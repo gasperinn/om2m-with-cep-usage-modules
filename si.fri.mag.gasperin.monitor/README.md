@@ -24,7 +24,7 @@ OM2M_CONTAINER_NAME=CEP_DATA            //Container name
 OM2M_SUB_CONTAINER=SUB_MY_SENSOR        //Custom name of subcontainer where subscription will be placed
 POST_TO_GCM=false                       //Post to GCM when data is received
 GCM_API_KEY=***                         //GCM API key of the application 
-GCM_DEVICE_ID=***                       //GCM DEVICE ID
+GCM_TOPIC=***                           //GCM topic where devices are subscribed
 GCM_TITLE=Alert                         //Title of the message which will be posted to GCM
 ```
 
