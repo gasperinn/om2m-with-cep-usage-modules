@@ -22,6 +22,7 @@ import java.net.InetSocketAddress;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -32,14 +33,13 @@ import java.util.Set;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
-
-import si.fri.mag.gasperin.gcm.GCMContent;
 
 public class Monitor
 {
@@ -57,7 +57,7 @@ public class Monitor
   
   private static boolean postToGcmBool;
   private static String GCM_API_KEY;
-  private static String GCM_DEVICE_ID;
+  private static String GCM_TOPIC;
   private static String GCM_TITLE;
 
   public static void main(String[] args) throws Exception
@@ -73,7 +73,7 @@ public class Monitor
 	    prop.load(input);
 	    portCEP = Integer.parseInt(prop.getProperty("MONITOR_PORT"));
 	    GCM_API_KEY = prop.getProperty("GCM_API_KEY");
-	    GCM_DEVICE_ID = prop.getProperty("GCM_DEVICE_ID");
+	    GCM_TOPIC = prop.getProperty("GCM_TOPIC");
 	    context = prop.getProperty("MONITOR_CONTEXT");
 	    om2mIp = prop.getProperty("OM2M_IP");
 	    postToGcmBool = Boolean.parseBoolean(prop.getProperty("POST_TO_GCM"));
@@ -203,33 +203,37 @@ public class Monitor
 
      	try{
      		
-     	   GCMContent content = new GCMContent();
-     		
-     	   content.addRegId(GCM_DEVICE_ID);       
-     	   content.createData(title, message);
-     	   
-    		   URL url = new URL("https://gcm-http.googleapis.com/gcm/send");
-    		   HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-    		   
-    		   conn.setRequestMethod("POST");
-    		   conn.setRequestProperty("Content-Type", "application/json");
-    		   conn.setRequestProperty("Authorization", "key="+GCM_API_KEY);
-    		   
-    		   conn.setDoOutput(true);
-    		   ObjectMapper mapper = new ObjectMapper();
-    		   DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
-    		   mapper.writeValue(wr, content);
-    		   
-    		   wr.flush();
-    		   wr.close();
-    		   
-    		   int response = conn.getResponseCode();
-//    		   System.out.println(response);
+     		JSONObject jGcmData = new JSONObject();
+            JSONObject jData = new JSONObject();
+            JSONObject jsonMessage = new JSONObject(message);
+            jsonMessage.put("title", title);
+            jData.put("message", jsonMessage.toString());
+            // Where to send GCM message.
+            jGcmData.put("to", GCM_TOPIC);
+            // What to send in GCM message.
+            jGcmData.put("data", jData);
+
+            // Create connection to send GCM Message request.
+            URL url = new URL("https://android.googleapis.com/gcm/send");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestProperty("Authorization", "key=" + GCM_API_KEY);
+            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setRequestMethod("POST");
+            conn.setDoOutput(true);
+
+            // Send GCM message content.
+            OutputStream outputStream = conn.getOutputStream();
+            outputStream.write(jGcmData.toString().getBytes());
+
+            // Read GCM response.
+            InputStream inputStream = conn.getInputStream();
+            String resp = IOUtils.toString(inputStream);
     		   
     		}catch(Exception e){
     			e.printStackTrace();
     		}
      }
   }
+ 
  
 }
